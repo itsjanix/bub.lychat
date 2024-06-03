@@ -1,0 +1,102 @@
+/* Chat container */
+#messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-height: 570px; /* Adjust the height as needed */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    background-color: #f3f0ff; /* Light violet background */
+    border-radius: 8px; /* Rounded corners */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Individual message */
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for messages */
+    max-width: 80%;
+    word-wrap: break-word; /* Handle long words */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Message sender's name (you) */
+.message.sender strong {
+    color: #2f0067; /* Violet color for receiver */
+}
+
+/* Message sender's name (others) */
+.message.receiver strong {
+    color: #0067a3; /* Blue color for sender */
+}
+
+/* Message content */
+.message p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* More specific CSS for the message timestamp */
+.message em {
+    color: #0415aa;
+    font-size: 1px; /* Smaller font size for timestamp */
+    display: block; /* Display on a new line */
+    margin-top: 5px; /* Space above the timestamp */
+}
+
+/* Form styling */
+.messageForm {
+    border: 1px solid #995ee0;
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the form */
+    background-color: #dfbfff; /* Light background color */
+    box-shadow: 0 4px 8px rgba(214, 51, 211, 0.1); /* Subtle box shadow */
+    max-width: 500px; /* Maximum width for the form */
+    margin: 20px auto; /* Center the form with automatic margins */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Additional styles for input and button elements inside the form */
+.messageForm textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input fields */
+    margin: 10px 0; /* Margin around input fields */
+    border: 1px solid #cb83ca; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    resize: none; /* Disable resizing */
+    overflow: hidden; /* Hide overflow */
+}
+
+.messageForm button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the button */
+    background-color: #2f0067; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.messageForm button:hover {
+    background-color: #4e0099; /* Darker background color on hover */
+}
+
+/* Style the chatbox title */
+h2 {
+    text-align: center;
+    color: #2f0067; /* Violet color */
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Profile link */
+.profile-link {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: #2f0067;
+    text-decoration: none;
+    font-weight: bold;
+}
